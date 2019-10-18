@@ -1,5 +1,4 @@
 $(function() {
-	
 	function loadSongs(length, data) {
 		for (var i = 0; i < length; i++) {
 
@@ -103,8 +102,7 @@ $(function() {
 
 				$('.local-song').text(songsId.length);
 				loadSongs(20, songsDetails);
-				window.location.reload();
-
+               window.location.reload();
 			},
 
 			error: function(data) {
@@ -139,7 +137,7 @@ $(function() {
 			var id = $liActive.data('id');
 			$.ajax({
 				type: 'GET',
-				url: 'http://www.arthurdon.top:3000/lyric?id=' + id,
+				url: 'https://www.arthurdon.top:10099/lyric?id=' + id,
 				success: function(data) {
 
 					//移出其他歌词
